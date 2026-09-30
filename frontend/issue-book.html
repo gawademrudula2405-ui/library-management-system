@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Issue Book</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Library Management System</h1>
+
+    <h2>Issue Book</h2>
+
+    <form id="issueForm">
+
+        <label>Reader</label>
+
+        <select id="user_id" required>
+
+            <option value="">
+                Select Reader
+            </option>
+
+        </select>
+
+
+        <label>Book</label>
+
+        <select id="book_id" required>
+
+            <option value="">
+                Select Book
+            </option>
+
+        </select>
+
+
+        <label>Due Date</label>
+
+        <input
+            type="date"
+            id="due_date"
+            required
+        >
+
+
+        <button type="submit">
+            Issue Book
+        </button>
+
+    </form>
+
+    <p id="issueMessage"></p>
+
+    <a href="index.html">
+        ← Back to Dashboard
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

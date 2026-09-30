@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+/* ==========================================
+   LOGIN
+   ========================================== */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+
+    width: 100%;
+    max-width: 420px;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-card label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.login-card input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.login-card button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.login-card button:hover {
+    background: #1d4ed8;
+}
+
+#loginMessage {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* ==========================================
+   DASHBOARD HEADER
+   ========================================== */
+
+.dashboard-header {
+    background: #2563eb;
+
+    color: white;
+
+    padding: 20px 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 5px;
+}
+
+.dashboard-header p {
+    margin: 0;
+}
+
+#logoutButton {
+    background: white;
+
+    color: #2563eb;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   DASHBOARD
+   ========================================== */
+
+.dashboard-container {
+    max-width: 1200px;
+
+    margin: 30px auto;
+
+    padding: 0 20px;
+}
+
+.section-card {
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-card h2 {
+    margin-top: 0;
+}
+
+
+/* ==========================================
+   SEARCH
+   ========================================== */
+
+.search-box {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    flex: 1;
+
+    min-width: 250px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+}
+
+.search-box button {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   BOOK CARDS
+   ========================================== */
+
+.books-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 20px;
+}
+
+.book-card {
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    background: #fafafa;
+}
+
+.book-card h3 {
+    margin-top: 0;
+}
+
+.book-card p {
+    margin: 7px 0;
+
+    color: #555;
+}
+
+.available {
+    color: green !important;
+
+    font-weight: bold;
+}
+
+.not-available {
+    color: red !important;
+
+    font-weight: bold;
+}
+
+.reserve-button {
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #16a34a;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.reserve-button:disabled {
+    background: #aaa;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   TABLE
+   ========================================== */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: left;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .dashboard-header {
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        align-items: flex-start;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+
+}
+
+/* Shared library visual theme */
+:root {
+    --ink: #17251f;
+    --muted: #718078;
+    --green: #246b50;
+    --green-dark: #194d39;
+    --green-soft: #e7f1eb;
+    --line: #e4e9e3;
+}
+
+body {
+    color: var(--ink);
+    font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(ellipse at 10% 0%, #e4eee5 0, transparent 36%), #f3f5f0;
+}
+
+.login-card, .section-card {
+    border: 1px solid rgba(228, 233, 227, .9);
+    border-radius: 20px;
+    box-shadow: 0 18px 55px rgba(27, 49, 37, .09);
+}
+
+.login-card { padding: 40px; }
+.login-card h1, .dashboard-header h1, .section-card h2 { font-family: 'Manrope', 'Segoe UI', sans-serif; letter-spacing: -.04em; }
+.login-card label { color: #34453c; font-size: .9rem; }
+.login-card input, .search-box input {
+    min-height: 48px;
+    background: #fbfcfa;
+    border: 1px solid #dce4dc;
+    border-radius: 10px;
+    transition: border-color .18s, box-shadow .18s;
+}
+.login-card input:focus, .search-box input:focus { outline: 0; border-color: #5f9a7b; box-shadow: 0 0 0 4px rgba(36, 107, 80, .12); }
+.login-card button, .search-box button, .reserve-button {
+    background: var(--green);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: background .18s, transform .18s, box-shadow .18s;
+}
+.login-card button:hover, .search-box button:hover, .reserve-button:hover { background: var(--green-dark); transform: translateY(-1px); }
+.dashboard-header {
+    color: #fff;
+    background: linear-gradient(115deg, #194d39, #2b7656);
+    padding: 24px max(28px, calc((100vw - 1160px) / 2));
+    box-shadow: 0 10px 30px rgba(25, 77, 57, .16);
+}
+#logoutButton { color: var(--green-dark); border-radius: 9px; font-weight: 700; }
+#logoutButton:hover { background: var(--green-soft); }
+.dashboard-container { max-width: 1160px; margin-top: 34px; }
+.section-card { padding: 28px; margin-bottom: 22px; }
+.section-card h2 { font-size: 1.35rem; }
+.book-card { padding: 22px; background: #fbfcfa; border: 1px solid var(--line); border-radius: 14px; transition: transform .18s, box-shadow .18s; }
+.book-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(27, 49, 37, .08); }
+.book-card h3 { color: var(--ink); }
+.book-card p { color: var(--muted); }
+.available { color: var(--green) !important; }
+.not-available { color: #b34d43 !important; }
+.table-container { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; }
+th { color: #53645b; background: #f3f7f3; font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; white-space: nowrap; }
+th, td { padding: 14px 15px; border-bottom: 1px solid var(--line); }
+tbody tr:last-child td { border-bottom: 0; }
+
+@media (max-width: 600px) {
+    .login-card { padding: 28px; }
+    .section-card { padding: 21px; }
+    .dashboard-header { padding: 20px; }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="student.css">
+
+</head>
+
+<body>
+
+    <header class="dashboard-header">
+
+        <div>
+            <h1>🎓 Student Dashboard</h1>
+
+            <p>
+                Welcome,
+                <span id="studentName"></span>
+            </p>
+        </div>
+
+        <button id="logoutButton">
+            🚪 Logout
+        </button>
+
+    </header>
+
+
+    <main class="dashboard-container">
+
+
+        <!-- =============================== -->
+        <!-- SEARCH BOOKS -->
+        <!-- =============================== -->
+
+        <section class="section-card">
+
+            <h2>🔍 Search Books</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by title, author, category or ISBN"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+                <button id="showAllButton">
+                    Show All
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =============================== -->
+        <!-- AVAILABLE BOOKS -->
+        <!-- =============================== -->
+
+        <section class="section-card">
+
+            <h2>📚 Available Books</h2>
+
+            <div id="booksContainer">
+
+                <p>Loading books...</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =============================== -->
+        <!-- MY BORROWED BOOKS -->
+        <!-- =============================== -->
+
+        <section class="section-card">
+
+            <h2>📋 My Borrowed Books</h2>
+
+            <div id="borrowingsContainer">
+
+                <p>Loading your borrowing records...</p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="student.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Book - Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Library Management System</h1>
+
+        <h2>Add New Book</h2>
+
+        <form id="bookForm">
+
+            <label>Book Title</label>
+            <input type="text" id="title" required>
+
+            <label>ISBN</label>
+            <input type="text" id="isbn" required>
+
+            <label>Edition</label>
+            <input type="text" id="edition">
+
+            <label>Author Name</label>
+            <input type="text" id="author_name">
+
+            <label>Category</label>
+            <input type="text" id="category">
+
+            <label>Price</label>
+            <input type="number" id="price" step="0.01">
+
+            <label>Publisher ID</label>
+            <input type="number" id="publisher_id" required>
+
+            <button type="submit">Add Book</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
